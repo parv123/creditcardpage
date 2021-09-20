@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+  
+}
+html {
+  background: rgba(132, 173, 248, 0.274);
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(141, 138, 138);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.creditcardfront {
+background-image: url(./Images/24.jpeg);
+border-radius: 20px;
+width: 100%;
+height: 100%;
+box-shadow: rgba(17, 17, 17, 0.774) 0px 7px 29px 0px;
+position: absolute;
+opacity: 1;
+margin-left: auto;
+margin-right: auto;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.creditcardback {
+  background-image: url(./Images/24.jpeg);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(17, 17, 17, 0.774) 0px 7px 29px 0px;
+  position: absolute;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+.carddetails{
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  box-shadow: rgba(17, 17, 17, 0.774) 0px 7px 29px 0px;
+  height: 350px;
+  width: 500px;
+  transition: all 0.75s ease;
+  opacity: 1; 
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+button {
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border: none;
+  background-color: #1e58d4;
+  font-size: 15px;
+width:100%;
+margin: 10px;
+height: 40px;
+}
+
+input {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: ease-in-out;
+  border-radius: 2px; 
+  margin: 5px;
+  border: none;
+  height : 30px
+}
+select {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: ease-in-out;
+  border-radius: 2px; 
+  margin: 5px;
+  border: none;
+  height : 30px
+}
+label {
+ font-size:small
+}
+.flipcard {
+ 
+  width: 350px;
+  height: 205px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flipcardinner {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#cardnum {
+  font-size: larger;
+  border-radius:5px;
+
+}
+
+#expirydiv {
+ text-align: right;
+ margin-right:20px;
+ margin-top:-40px;
+ margin-left: 250px;
+ padding:2px;
+ border-radius: 5px;
+
+}
+#namediv {
+  text-align:left;
+  margin-left:15px;
+  margin-right: 100px;
+  padding: 2px;
+  border-radius: 5px;
+}
+.cardlabel {
+  color: rgb(165, 161, 161);
+  font-family:FreeMono, monospace;
+}
+@keyframes fadeinout {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{opacity: 0;}
+}
+#cvvlabel{
+  text-align:right;
+  margin-left :75% ;
+  color:white;
+  font-size: medium
+}
+#cvvstrip{
+  background-color: #ffffff;
+  width:95%;
+  color:black;
+  border-radius: 6px;
+  margin-left: 10px;
+  height:40px;
+  margin-top: 1px;
+  text-align: right
+}
